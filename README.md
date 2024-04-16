@@ -6,15 +6,15 @@ runme:
 
 # Versatile Landing, Blog & Docs Template for a Simplified Web Presence
 
-![ScrewFast](https://github.com/mearashadowfax/ScrewFast/assets/125820963/cdf299bd-414a-4a2d-baf0-d188bb4709c7)
+![Ribhya](https://github.com/mearashadowfax/Ribhya/assets/125820963/cdf299bd-414a-4a2d-baf0-d188bb4709c7)
 
-ScrewFast is an open-source template designed for quick and efficient web project setup, blending minimalism with functionality. Whether you're showcasing a portfolio, launching a company landing page, or running a blog, ScrewFast provides everything you need. By combining the power of the [Astro](https://astro.build/), [Tailwind CSS](https://tailwindcss.com/), and [Preline UI](https://preline.co/), this template offers a functional and aesthetically pleasing solution for your web presence.
+Ribhya is an open-source template designed for quick and efficient web project setup, blending minimalism with functionality. Whether you're showcasing a portfolio, launching a company landing page, or running a blog, Ribhya provides everything you need. By combining the power of the [Astro](https://astro.build/), [Tailwind CSS](https://tailwindcss.com/), and [Preline UI](https://preline.co/), this template offers a functional and aesthetically pleasing solution for your web presence.
 
-**[View Live Demo](https://screwfast.uk)**
+**[View Live Demo](https://Ribhya.uk)**
 
 ## Table of Contents
 
-* [Why Choose ScrewFast?](#why-choose-screwfast)
+* [Why Choose Ribhya?](#why-choose-Ribhya)
 * [Features](#features)
 * [What's New](#whats-new)
 * [Getting Started](#getting-started)
@@ -64,7 +64,7 @@ ScrewFast is an open-source template designed for quick and efficient web projec
 * [Contributing](#contributing)
 * [License](#license)
 
-## Why Choose ScrewFast?
+## Why Choose Ribhya?
 
 - **Efficient Architecture:** Deploy faster with a template that's simple to set up and navigate.
 - **Optimized for Small Projects:** Perfect for crisp, professional web personas without excess complexity.
@@ -122,7 +122,7 @@ ScrewFast is an open-source template designed for quick and efficient web projec
 
    - Integrates [Astro’s internationalization (i18n) features](https://docs.astro.build/en/guides/internationalization/).
    - Additionally, a custom LanguagePicker component has been developed to facilitate language selection.
-   - Developers can access the monolingual version directly from [`monolingual-site` branch](https://github.com/mearashadowfax/ScrewFast/tree/monolingual-site).
+   - Developers can access the monolingual version directly from [`monolingual-site` branch](https://github.com/mearashadowfax/Ribhya/tree/monolingual-site).
 
 - [x] **Dynamic Table of Contents (ToC) with Scroll Progress Indicator**:
 
@@ -135,7 +135,7 @@ ScrewFast is an open-source template designed for quick and efficient web projec
 
 ### Bug Fixes
 
-- Currently, there are no known bugs. If you encounter any issues, please report them on our [issues page](https://github.com/mearashadowfax/ScrewFast/issues).
+- Currently, there are no known bugs. If you encounter any issues, please report them on our [issues page](https://github.com/mearashadowfax/Ribhya/issues).
 
 ## Getting Started
 
@@ -177,11 +177,11 @@ This creates a `dist/` directory with your built site (configurable via [outDir 
 
 Click the button below to start deploying your project on Vercel:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmearashadowfax%2FScrewFast)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmearashadowfax%2FRibhya)
 
 ## Project Structure
 
-ScrewFast organizes modular components, content, and layouts to streamline development and content management.
+Ribhya organizes modular components, content, and layouts to streamline development and content management.
 
 ```md {"id":"01HVKGXXKDB4RKVKFYD9NW3CV1"}
 
@@ -242,7 +242,7 @@ The scripts in the `public/scripts/vendor` directory are essential for the inter
 
 ## Customization
 
-ScrewFast allows for easy customization to suit your specific needs. Here are a couple of ways you can configure components and content:
+Ribhya allows for easy customization to suit your specific needs. Here are a couple of ways you can configure components and content:
 
 ### Editing Component Variables
 
@@ -252,7 +252,7 @@ Some components have properties defined as TypeScript variables within the compo
 // Define the string variables title and subTitle for the main heading and sub-heading text.
 const title: string = "Meeting Industry Demands";
 const subTitle: string =
-  "At ScrewFast, we tackle the unique challenges encountered in the hardware and construction sectors.";
+  "At Ribhya, we tackle the unique challenges encountered in the hardware and construction sectors.";
 ```
 
 For collections of content like testimonials or statistics, edit the corresponding array of objects:
@@ -356,11 +356,11 @@ export const socialLinks: SocialLinks = {
 
 ## Integrations and Enhancements
 
-ScrewFast leverages the power of Astro — a modern, cutting-edge site building framework — and integrates it seamlessly with the utility-first CSS framework TailwindCSS, to deliver exceptional site performance and a seamless user experience. Here are some notable integrations and enhancements included in the project:
+Ribhya leverages the power of Astro — a modern, cutting-edge site building framework — and integrates it seamlessly with the utility-first CSS framework TailwindCSS, to deliver exceptional site performance and a seamless user experience. Here are some notable integrations and enhancements included in the project:
 
 ### Starlight Documentation
 
-ScrewFast is now equipped with the Starlight, which is designed to elevate the user's experience with documentation. This modern and elegant theme comes with a suite of features to make the content more accessible and pleasant to navigate.
+Ribhya is now equipped with the Starlight, which is designed to elevate the user's experience with documentation. This modern and elegant theme comes with a suite of features to make the content more accessible and pleasant to navigate.
 
 Key Features:
 
@@ -481,7 +481,7 @@ Additionally, update the `<html>` tag to remove the `scrollbar-hide` class, resu
 
 ### SEO Configuration
 
-The SEO Configuration in the ScrewFast template is designed to empower users in optimizing their website's visibility on search engines and social media platforms. This documentation outlines the implementation details and usage instructions for effectively managing SEO settings.
+The SEO Configuration in the Ribhya template is designed to empower users in optimizing their website's visibility on search engines and social media platforms. This documentation outlines the implementation details and usage instructions for effectively managing SEO settings.
 
 #### Using constants.ts
 
@@ -493,7 +493,7 @@ To customize SEO settings, modify the values in the `constants.ts` file. Key con
 // constants.ts
 
 export const SITE = {
-  title: "ScrewFast",
+  title: "Ribhya",
   // Other SITE properties...
 };
 
@@ -560,8 +560,8 @@ Structured data in JSON-LD format can be managed by the `Meta.astro` component, 
   structuredData={{
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "ScrewFast",
-    "url": "https://screwfast.uk",
+    "name": "Ribhya",
+    "url": "https://Ribhya.uk",
     "description": "Discover top-quality hardware tools and services"
   }}
 >
@@ -721,4 +721,4 @@ If you're interested in helping, you can contribute in several ways:
 
 ## License
 
-This project is released under the MIT License. Please read the [LICENSE](https://github.com/mearashadowfax/ScrewFast/blob/main/LICENSE) file for more details.
+This project is released under the MIT License. Please read the [LICENSE](https://github.com/mearashadowfax/Ribhya/blob/main/LICENSE) file for more details.
