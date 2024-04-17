@@ -11,17 +11,17 @@ const footerLinks = [
     section: "Écosystème",
     links: [
       { name: "Documentation", url: "/fr/welcome-to-docs/" },
-      { name: "Outils et Équipements", url: "/fr/products" },
-      { name: "Services de Construction", url: "/fr/services" },
+      { name: "Product", url: "/fr/products" },
+      { name: "Services", url: "/fr/services" },
     ],
   },
   {
     section: "Société",
     links: [
-      { name: "À propos de nous", url: "#" },
+      { name: "À propos de nous", url: "/fr/about" },
       { name: "Blog", url: "/fr/blog" },
-      { name: "Carrières", url: "#" },
-      { name: "Clients", url: "#" },
+      { name: "Carrières", url: "/fr/careers" },
+      { name: "Clients", url: "/fr/customers" },
     ],
   },
 ];

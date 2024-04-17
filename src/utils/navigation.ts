@@ -12,17 +12,17 @@ const footerLinks = [
     section: "Ecosystem",
     links: [
       { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
+      { name: "Product", url: "/products" },
+      { name: "Services", url: "/services" },
     ],
   },
   {
     section: "Company",
     links: [
-      { name: "About us", url: "#" },
+      { name: "About us", url: "/about" },
       { name: "Blog", url: "/blog" },
-      { name: "Careers", url: "#" },
-      { name: "Customers", url: "#" },
+      { name: "Careers", url: "/careers" },
+      { name: "Customers", url: "/customers" },
     ],
   },
 ];
