@@ -113,6 +113,7 @@ export default defineConfig({
   ],
   output: "static",
   experimental: {
+    assets: true,
     clientPrerender: true,
     directRenderScript: true,
   },
