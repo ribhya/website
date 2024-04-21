@@ -1,0 +1,30 @@
+---
+// Import the necessary components
+import MainLayout from "@/layouts/MainLayout.astro";
+import DemoSection from "@/components/sections/DemoSection.astro";
+import { SITE } from "@/data_files/constants";
+
+const pageTitle: string = `Request a Demo | ${SITE.title}`;
+---
+
+<!--Utilizing MainLayout for the outer layout of the page, and defining meta for SEO purposes-->
+<MainLayout
+  title={pageTitle}
+  structuredData={{
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://ribhya.com/demo",
+    "url": "https://ribhya.com/demo",
+    "name": "Request a Demo | Ribhya",
+    "description": "Want to see the power of AI helping your C-Suite executives? Reach out, and let's craft the perfect solution with our tools and services.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "url": "https://ribhya.com",
+      "name": "Ribhya",
+      "description": "Ribhya: Your Premier C-Suite Copilot for Accelerated Business Excellence",
+    },
+    "inLanguage": "en-US"
+  }}
+>
+  <DemoSection />
+</MainLayout>

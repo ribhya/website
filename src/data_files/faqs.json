@@ -2,28 +2,32 @@
   "subTitle": "Ask us anything about our brand and products, and get factual responses.",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "What is Ribhya?",
+      "answer": "Ribhya is an advanced cloud management platform designed to empower executives with real-time insights, AI-generated recommendations, and automated actions for optimizing cloud operations and driving business excellence."
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "What features does Ribhya offer",
+      "answer": "Ribhya offers a range of features, including: Real-time insights into cloud spending, performance metrics, and security posture; AI-generated recommendations tailored to business objectives; Automated actions to streamline operations and drive results; Strategic partnership to navigate digital transformation confidently."
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "How does Ribhya help executives?",
+      "answer": "Ribhya helps executives make informed decisions and take decisive action by providing visibility into their organization's cloud environment, generating proactive recommendations, automating routine tasks, and serving as a strategic partner for navigating digital transformation."
     },
     {
-      "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
+      "question": "Can Ribhya integrate with existing systems and tools?",
+      "answer": "Yes, Ribhya is designed to integrate seamlessly with existing systems and tools, allowing executives to leverage their existing infrastructure and workflows while benefiting from Ribhya's advanced capabilities."
     },
     {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
+      "question": "Is Ribhya secure and compliant?",
+      "answer": "Yes, Ribhya prioritizes security and compliance, with robust security features and proactive monitoring capabilities to safeguard sensitive data and ensure compliance with industry regulations and best practices."
     },
     {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "How can I get started with Ribhya?",
+      "answer": "Getting started with Ribhya is easy. Simply contact our team to schedule a demo and learn how Ribhya can help drive business excellence in your organization. Our experts will work with you to tailor Ribhya to your specific needs and requirements."
+    },
+    {
+      "question": "What industries can benefit from Ribhya?",
+      "answer": "Ribhya is suitable for organizations across various industries, including finance, healthcare, technology, retail, and more. Any organization looking to optimize cloud operations, enhance security, and drive business excellence can benefit from Ribhya's advanced capabilities."
     }
   ]
 }
