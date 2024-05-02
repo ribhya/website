@@ -1,9 +1,3 @@
----
-runme:
-  id: 01HVKGXXKE1SA45X7YVR7F8FFV
-  version: v3
----
-
 # Versatile Landing, Blog & Docs Template for a Simplified Web Presence
 
 ![Ribhya](https://github.com/mearashadowfax/Ribhya/assets/125820963/cdf299bd-414a-4a2d-baf0-d188bb4709c7)
