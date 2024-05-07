@@ -7,9 +7,6 @@ export default {
   ],
   darkMode: "class",
   theme: {
-    fontFamily: {
-      sans: ['Urbanist', ...defaultTheme.fontFamily.sans],
-    },
     colors: {
       transparent: "transparent",
       current: "currentColor",
