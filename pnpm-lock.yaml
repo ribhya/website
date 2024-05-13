@@ -64,8 +64,8 @@ importers:
         specifier: ^0.5.7
         version: 0.5.7(tailwindcss@3.4.3)
       astro-vtbot:
-        specifier: ^1.7.16
-        version: 1.7.16
+        specifier: ^1.7.17
+        version: 1.7.17
       prettier:
         specifier: ^3.2.5
         version: 3.2.5
@@ -1067,8 +1067,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^3.3.0
 
-  astro-vtbot@1.7.16:
-    resolution: {integrity: sha512-sWypkpHDfD0CvulwznpPUehyV/wrpdwPNsGDHprBQXc2Ka0QmNSl7dyeyTkHfF18Ud9sfTMcJG1nen+X/RU+bA==}
+  astro-vtbot@1.7.17:
+    resolution: {integrity: sha512-DWArck5gK03xXsm7weVFYBVA09Z0WFhyOZIf/Rk/uDQPp4pqIQYadZdE9cnA7gcfyoYSNJIwexJAx7tmC8x3zg==}
 
   astro@4.8.2:
     resolution: {integrity: sha512-WBrnNePQ03cF5c+9sjD3TeyJodWMuPCwygDOUo7r+7LbKDN9TJK+KxIxo01AOX4HcexhxcLiTVVCBLSsi+OX9A==}
@@ -3987,7 +3987,7 @@ snapshots:
       hast-util-to-html: 8.0.4
       remark-expressive-code: 0.33.5
 
-  astro-vtbot@1.7.16: {}
+  astro-vtbot@1.7.17: {}
 
   astro@4.8.2(@types/node@20.12.11)(typescript@5.4.5):
     dependencies:
