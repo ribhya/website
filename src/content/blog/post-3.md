@@ -1,15 +1,15 @@
 ---
-title: "Mastering the Art of MLOps: Transforming AI from Experimentation to Production"
-description: "Mastering the Art of MLOps: Transforming AI from Experimentation to Production"
-author: "Olga Zabegina"
-role: "Strategic Marketing Manager"
-authorImage: "@/images/blog/anna.avif"
-authorImageAlt: "Avatar Description"
+title: 'Mastering the Art of MLOps: Transforming AI from Experimentation to Production'
+description: 'Mastering the Art of MLOps: Transforming AI from Experimentation to Production'
+author: 'Olga Zabegina'
+role: 'Strategic Marketing Manager'
+authorImage: '@/images/blog/anna.avif'
+authorImageAlt: 'Avatar Description'
 pubDate: 2024-02-18
-cardImage: "@/images/blog/post-3.avif"
-cardImageAlt: "Side view worker wearing gloves"
+cardImage: '@/images/blog/post-3.avif'
+cardImageAlt: 'Side view worker wearing gloves'
 readTime: 3
-tags: ["Artificial Intelligence", "Machine Learning", "Operations"]
+tags: ['Artificial Intelligence', 'Machine Learning', 'Operations']
 contents: []
 ---
 

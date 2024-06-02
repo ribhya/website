@@ -1,14 +1,14 @@
 ---
 // Import necessary components and utilities
-import AvatarBlog from "../avatars/AvatarBlog.astro";
-import { Image } from "astro:assets";
-import { formatDate } from "@/utils/utils";
-import type { CollectionEntry } from "astro:content";
+import AvatarBlog from '../avatars/AvatarBlog.astro'
+import { Image } from 'astro:assets'
+import { formatDate } from '@/utils/utils'
+import type { CollectionEntry } from 'astro:content'
 
-const { blogEntry } = Astro.props;
+const { blogEntry } = Astro.props
 
 interface Props {
-  blogEntry: CollectionEntry<"blog">;
+  blogEntry: CollectionEntry<'blog'>
 }
 ---
 
@@ -29,9 +29,9 @@ interface Props {
       class="absolute start-0 top-0 size-full object-cover transition duration-500 group-hover:scale-110"
       src={blogEntry.data.cardImage}
       alt={blogEntry.data.cardImageAlt}
-      draggable={"false"}
-      loading={"eager"}
-      format={"avif"}
+      draggable={'false'}
+      loading={'eager'}
+      format={'avif'}
     />
   </div>
   <!-- The container for the blog author's avatar and associated metadata (author name and publication date) -->

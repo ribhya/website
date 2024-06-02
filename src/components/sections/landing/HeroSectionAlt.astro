@@ -1,35 +1,24 @@
 ---
 // Import the necessary dependencies
-import GithubBtn from "../../ui/buttons/GithubBtn.astro";
+import GithubBtn from '../../ui/buttons/GithubBtn.astro'
 
 // Define props from Astro
-const { title, subTitle, url } = Astro.props;
+const { title, subTitle, url } = Astro.props
 
-const btnTitle = Astro.currentLocale === "fr" ? "Continuer avec Github" : "Continue with Github";
+const btnTitle = Astro.currentLocale === 'fr' ? 'Continuer avec Github' : 'Continue with Github'
 
 // Define TypeScript interface for props
 interface Props {
-  title: string;
-  subTitle?: string;
-  url?: string;
+  title: string
+  subTitle?: string
+  url?: string
 }
 ---
 
-<section
-  class="relative mx-auto max-w-[85rem] px-4 pb-24 pt-10 sm:px-6 lg:px-8"
->
+<section class="relative mx-auto max-w-[85rem] px-4 pb-24 pt-10 sm:px-6 lg:px-8">
   <!-- Decorating SVG elements -->
-  <div
-    class="absolute left-0 top-[55%] scale-90 md:top-[20%] xl:left-[10%] xl:top-[25%]"
-  >
-    <svg
-      width="64"
-      height="64"
-      fill="none"
-      stroke-width="1.5"
-      color="#ea580c"
-      viewBox="0 0 24 24"
-    >
+  <div class="absolute left-0 top-[55%] scale-90 md:top-[20%] xl:left-[10%] xl:top-[25%]">
+    <svg width="64" height="64" fill="none" stroke-width="1.5" color="#ea580c" viewBox="0 0 24 24">
       <path
         fill="#ea580c"
         stroke="#ea580c"
@@ -47,43 +36,30 @@ interface Props {
         stroke="#ea580c"
         stroke-linecap="round"
         stroke-linejoin="round"
-        d="m3.528 7.294 8.18 4.544a.6.6 0 0 0 .583 0l8.209-4.56M12 21v-9"
-      ></path>
+        d="m3.528 7.294 8.18 4.544a.6.6 0 0 0 .583 0l8.209-4.56M12 21v-9"></path>
     </svg>
   </div>
   <div class="absolute left-[85%] top-0 scale-75">
-    <svg
-      width="64"
-      height="64"
-      fill="none"
-      stroke-width="1.5"
-      color="#fbbf24"
-      viewBox="0 0 24 24"
-    >
+    <svg width="64" height="64" fill="none" stroke-width="1.5" color="#fbbf24" viewBox="0 0 24 24">
       <path
         stroke="#fbbf24"
         stroke-linecap="round"
         stroke-linejoin="round"
-        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"
-      ></path>
+        d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z"></path>
       <path
         fill="#fbbf24"
         stroke="#fbbf24"
         stroke-linecap="round"
         stroke-linejoin="round"
         d="M5 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
-      <path
-        stroke="#fbbf24"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M5 10.5V9M5 15v-1.5"></path>
+      <path stroke="#fbbf24" stroke-linecap="round" stroke-linejoin="round" d="M5 10.5V9M5 15v-1.5"
+      ></path>
       <path
         fill="#fbbf24"
         stroke="#fbbf24"
         stroke-linecap="round"
         stroke-linejoin="round"
-        d="M5 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM19 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
-      ></path>
+        d="M5 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM19 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
       <path
         stroke="#fbbf24"
         stroke-linecap="round"
@@ -91,17 +67,8 @@ interface Props {
         d="M10.5 19H9M15 19h-1.5"></path>
     </svg>
   </div>
-  <div
-    class="absolute bottom-[5%] left-[60%] scale-[.6] xl:bottom-[15%] xl:left-[35%]"
-  >
-    <svg
-      width="64"
-      height="64"
-      fill="none"
-      stroke-width="1.5"
-      color="#a3a3a3"
-      viewBox="0 0 24 24"
-    >
+  <div class="absolute bottom-[5%] left-[60%] scale-[.6] xl:bottom-[15%] xl:left-[35%]">
+    <svg width="64" height="64" fill="none" stroke-width="1.5" color="#a3a3a3" viewBox="0 0 24 24">
       <path
         stroke="#a3a3a3"
         stroke-linecap="round"
@@ -128,9 +95,7 @@ interface Props {
   <div class="mx-auto mt-5 max-w-3xl text-center">
     {
       subTitle && (
-        <p class="text-pretty text-lg text-neutral-600 dark:text-neutral-400">
-          {subTitle}
-        </p>
+        <p class="text-pretty text-lg text-neutral-600 dark:text-neutral-400">{subTitle}</p>
       )
     }
   </div>
@@ -138,7 +103,7 @@ interface Props {
   {
     url && (
       <div class="mt-8 flex justify-center gap-3">
-        <GithubBtn url={url} title={btnTitle}/>
+        <GithubBtn url={url} title={btnTitle} />
       </div>
     )
   }

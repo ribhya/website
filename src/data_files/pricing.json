@@ -11,11 +11,7 @@
     "price": "$49",
     "cents": ".00",
     "billingFrequency": "USD / monthly",
-    "features": [
-      "Key hardware tools",
-      "Access to guides & tutorials",
-      "Standard support"
-    ],
+    "features": ["Key hardware tools", "Access to guides & tutorials", "Standard support"],
     "purchaseBtnTitle": "Get the Starter Kit",
     "purchaseLink": "#"
   },

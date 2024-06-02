@@ -1,16 +1,16 @@
 ---
 //Import relevant dependencies
-import ThemeIcon from "../ThemeIcon.astro";
-import NavLink from "../ui/links/NavLink.astro";
-import Authentication from "./Authentication.astro";
-import enStrings from "@/utils/navigation.ts";
-import frStrings from "@/utils/fr/navigation.ts";
-import BrandLogo from "../BrandLogo.astro";
-import LanguagePicker from "../ui/LanguagePicker.astro";
+import ThemeIcon from '../ThemeIcon.astro'
+import NavLink from '../ui/links/NavLink.astro'
+import Authentication from './Authentication.astro'
+import enStrings from '@/utils/navigation.ts'
+import frStrings from '@/utils/fr/navigation.ts'
+import BrandLogo from '../BrandLogo.astro'
+import LanguagePicker from '../ui/LanguagePicker.astro'
 
 // Select the correct translation based on the page's lang prop:
-const strings = Astro.currentLocale === "fr" ? frStrings : enStrings;
-const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
+const strings = Astro.currentLocale === 'fr' ? frStrings : enStrings
+const homeUrl = Astro.currentLocale === 'fr' ? '/fr' : '/'
 ---
 
 <!-- Main header component -->
@@ -83,12 +83,10 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
     >
       <!-- Navigation links container -->
       <div
-        class="mt-5 flex flex-col gap-x-0 gap-y-4 md:mt-0 md:flex-row md:items-center md:justify-end md:gap-x-4 lg:gap-x-7 md:gap-y-0 md:ps-7"
+        class="mt-5 flex flex-col gap-x-0 gap-y-4 md:mt-0 md:flex-row md:items-center md:justify-end md:gap-x-4 md:gap-y-0 md:ps-7 lg:gap-x-7"
       >
         <!-- Navigation links and Authentication component -->
-        {strings.navBarLinks.map(link => (
-          <NavLink url={link.url} name={link.name} />
-        ))}
+        {strings.navBarLinks.map((link) => <NavLink url={link.url} name={link.name} />)}
 
         <Authentication />
         <LanguagePicker />
@@ -104,106 +102,92 @@ const homeUrl = Astro.currentLocale === "fr" ? "/fr" : "/";
 <script is:inline>
   const HSThemeAppearance = {
     init() {
-      const defaultTheme = "default";
-      let theme = localStorage.getItem("hs_theme") || defaultTheme;
+      const defaultTheme = 'default'
+      let theme = localStorage.getItem('hs_theme') || defaultTheme
 
-      if (document.querySelector("html").classList.contains("dark")) return;
-      this.setAppearance(theme);
+      if (document.querySelector('html').classList.contains('dark')) return
+      this.setAppearance(theme)
     },
     _resetStylesOnLoad() {
-      const $resetStyles = document.createElement("style");
-      $resetStyles.innerText = `*{transition: unset !important;}`;
-      $resetStyles.setAttribute("data-hs-appearance-onload-styles", "");
-      document.head.appendChild($resetStyles);
-      return $resetStyles;
+      const $resetStyles = document.createElement('style')
+      $resetStyles.innerText = `*{transition: unset !important;}`
+      $resetStyles.setAttribute('data-hs-appearance-onload-styles', '')
+      document.head.appendChild($resetStyles)
+      return $resetStyles
     },
     setAppearance(theme, saveInStore = true, dispatchEvent = true) {
-      const $resetStylesEl = this._resetStylesOnLoad();
+      const $resetStylesEl = this._resetStylesOnLoad()
 
       if (saveInStore) {
-        localStorage.setItem("hs_theme", theme);
+        localStorage.setItem('hs_theme', theme)
       }
 
-      if (theme === "auto") {
-        theme = window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "dark"
-          : "default";
+      if (theme === 'auto') {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default'
       }
 
-      document.querySelector("html").classList.remove("dark");
-      document.querySelector("html").classList.remove("default");
-      document.querySelector("html").classList.remove("auto");
+      document.querySelector('html').classList.remove('dark')
+      document.querySelector('html').classList.remove('default')
+      document.querySelector('html').classList.remove('auto')
 
-      document
-        .querySelector("html")
-        .classList.add(this.getOriginalAppearance());
+      document.querySelector('html').classList.add(this.getOriginalAppearance())
 
       setTimeout(() => {
-        $resetStylesEl.remove();
-      });
+        $resetStylesEl.remove()
+      })
 
       if (dispatchEvent) {
-        window.dispatchEvent(
-          new CustomEvent("on-hs-appearance-change", { detail: theme }),
-        );
+        window.dispatchEvent(new CustomEvent('on-hs-appearance-change', { detail: theme }))
       }
     },
     getAppearance() {
-      let theme = this.getOriginalAppearance();
-      if (theme === "auto") {
-        theme = window.matchMedia("(prefers-color-scheme: dark)").matches
-          ? "dark"
-          : "default";
+      let theme = this.getOriginalAppearance()
+      if (theme === 'auto') {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'default'
       }
-      return theme;
+      return theme
     },
     getOriginalAppearance() {
-      const defaultTheme = "default";
-      return localStorage.getItem("hs_theme") || defaultTheme;
+      const defaultTheme = 'default'
+      return localStorage.getItem('hs_theme') || defaultTheme
     },
-  };
-  HSThemeAppearance.init();
+  }
+  HSThemeAppearance.init()
 
-  window
-    .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", () => {
-      if (HSThemeAppearance.getOriginalAppearance() === "auto") {
-        HSThemeAppearance.setAppearance("auto", false);
-      }
-    });
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    if (HSThemeAppearance.getOriginalAppearance() === 'auto') {
+      HSThemeAppearance.setAppearance('auto', false)
+    }
+  })
 
-  window.addEventListener("load", () => {
-    const $clickableThemes = document.querySelectorAll(
-      "[data-hs-theme-click-value]",
-    );
-    const $switchableThemes = document.querySelectorAll(
-      "[data-hs-theme-switch]",
-    );
+  window.addEventListener('load', () => {
+    const $clickableThemes = document.querySelectorAll('[data-hs-theme-click-value]')
+    const $switchableThemes = document.querySelectorAll('[data-hs-theme-switch]')
 
     $clickableThemes.forEach(($item) => {
-      $item.addEventListener("click", () =>
+      $item.addEventListener('click', () =>
         HSThemeAppearance.setAppearance(
-          $item.getAttribute("data-hs-theme-click-value"),
+          $item.getAttribute('data-hs-theme-click-value'),
           true,
           $item,
         ),
-      );
-    });
+      )
+    })
 
     $switchableThemes.forEach(($item) => {
-      $item.addEventListener("change", (e) => {
-        HSThemeAppearance.setAppearance(e.target.checked ? "dark" : "default");
-      });
+      $item.addEventListener('change', (e) => {
+        HSThemeAppearance.setAppearance(e.target.checked ? 'dark' : 'default')
+      })
 
-      $item.checked = HSThemeAppearance.getAppearance() === "dark";
-    });
+      $item.checked = HSThemeAppearance.getAppearance() === 'dark'
+    })
 
-    window.addEventListener("on-hs-appearance-change", (e) => {
+    window.addEventListener('on-hs-appearance-change', (e) => {
       $switchableThemes.forEach(($item) => {
-        $item.checked = e.detail === "dark";
-      });
-    });
-  });
+        $item.checked = e.detail === 'dark'
+      })
+    })
+  })
 </script>
 <!--Import the necessary Collapse and Overlay plugins-->
 <!--https://preline.co/plugins/html/collapse.html-->

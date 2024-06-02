@@ -1,22 +1,22 @@
-import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
-import vercelStatic from "@astrojs/vercel/static";
-import sitemap from "@astrojs/sitemap";
-import compressor from "astro-compressor";
-import starlight from "@astrojs/starlight";
+import { defineConfig } from 'astro/config'
+import tailwind from '@astrojs/tailwind'
+import vercelStatic from '@astrojs/vercel/static'
+import sitemap from '@astrojs/sitemap'
+import compressor from 'astro-compressor'
+import starlight from '@astrojs/starlight'
 
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://ribhya.com",
+  site: 'https://ribhya.com',
   image: {
-    domains: ["images.unsplash.com"],
+    domains: ['images.unsplash.com'],
   },
   i18n: {
-    defaultLocale: "en",
-    locales: ["en", "fr"],
+    defaultLocale: 'en',
+    locales: ['en', 'fr'],
     fallback: {
-      fr: "en",
+      fr: 'en',
     },
     routing: {
       prefixDefaultLocale: false,
@@ -27,83 +27,83 @@ export default defineConfig({
     tailwind(),
     sitemap({
       i18n: {
-        defaultLocale: "en", // All urls that don't contain `fr` after `https://ribhya.com/` will be treated as default locale, i.e. `en`
+        defaultLocale: 'en', // All urls that don't contain `fr` after `https://ribhya.com/` will be treated as default locale, i.e. `en`
         locales: {
-          en: "en", // The `defaultLocale` value must present in `locales` keys
-          fr: "fr",
+          en: 'en', // The `defaultLocale` value must present in `locales` keys
+          fr: 'fr',
         },
       },
     }),
     starlight({
-      title: "Docs",
-      defaultLocale: "root",
+      title: 'Docs',
+      defaultLocale: 'root',
       locales: {
         root: {
-          label: "English",
-          lang: "en",
+          label: 'English',
+          lang: 'en',
         },
-        de: { label: "Deutsch", lang: "de" },
-        es: { label: "Español", lang: "es" },
-        fa: { label: "Persian", lang: "fa", dir: "rtl" },
-        fr: { label: "Français", lang: "fr" },
-        hi: { label: "हिन्दी", land: "hi" },
-        ja: { label: "日本語", lang: "ja" },
-        "zh-cn": { label: "简体中文", lang: "zh-CN" },
+        de: { label: 'Deutsch', lang: 'de' },
+        es: { label: 'Español', lang: 'es' },
+        fa: { label: 'Persian', lang: 'fa', dir: 'rtl' },
+        fr: { label: 'Français', lang: 'fr' },
+        hi: { label: 'हिन्दी', land: 'hi' },
+        ja: { label: '日本語', lang: 'ja' },
+        'zh-cn': { label: '简体中文', lang: 'zh-CN' },
       },
       // https://starlight.astro.build/guides/sidebar/
       sidebar: [
         {
-          label: "Quick Start Guides",
+          label: 'Quick Start Guides',
           translations: {
-            de: "Schnellstartanleitungen",
-            es: "Guías de Inicio Rápido",
-            fa: "راهنمای شروع سریع",
-            fr: "Guides de Démarrage Rapide",
-            hi: "त्वरित आरंभ मार्गदर्शिकाएँ",
-            ja: "クイックスタートガイド",
-            "zh-cn": "快速入门指南",
+            de: 'Schnellstartanleitungen',
+            es: 'Guías de Inicio Rápido',
+            fa: 'راهنمای شروع سریع',
+            fr: 'Guides de Démarrage Rapide',
+            hi: 'त्वरित आरंभ मार्गदर्शिकाएँ',
+            ja: 'クイックスタートガイド',
+            'zh-cn': '快速入门指南',
           },
-          autogenerate: { directory: "guides" },
+          autogenerate: { directory: 'guides' },
         },
         {
-          label: "Tools & Equipment",
+          label: 'Tools & Equipment',
           items: [
-            { label: "Tool Guides", link: "tools/tool-guides/" },
-            { label: "Equipment Care", link: "tools/equipment-care/" },
+            { label: 'Tool Guides', link: 'tools/tool-guides/' },
+            { label: 'Equipment Care', link: 'tools/equipment-care/' },
           ],
         },
         {
-          label: "Construction Services",
-          autogenerate: { directory: "construction" },
+          label: 'Construction Services',
+          autogenerate: { directory: 'construction' },
         },
         {
-          label: "Advanced Topics",
-          autogenerate: { directory: "advanced" },
+          label: 'Advanced Topics',
+          autogenerate: { directory: 'advanced' },
         },
       ],
       social: {
-        github: "https://github.com/ribhya",
+        github: 'https://github.com/ribhya',
       },
       disable404Route: true,
-      customCss: ["./src/styles/starlight.css"],
-      favicon: "/favicon.ico",
+      customCss: ['./src/styles/starlight.css'],
+      favicon: '/favicon.ico',
       components: {
-        SiteTitle: "./src/components/ui/starlight/SiteTitle.astro",
-        Head: "./src/components/ui/starlight/Head.astro",
+        SiteTitle: './src/components/ui/starlight/SiteTitle.astro',
+        Head: './src/components/ui/starlight/Head.astro',
       },
       head: [
         {
-          tag: "meta",
+          tag: 'meta',
           attrs: {
-            property: "og:image",
-            content: "https://screwfast.uk" + "/social.webp",
+            property: 'og:image',
+            content: 'https://screwfast.uk' + '/social.webp',
           },
         },
         {
-          tag: "meta",
+          tag: 'meta',
           attrs: {
-            property: "twitter:image",
-            content: "https://screwfast.uk" + "/social.webp",
+            property: 'twitter:image',
+            content: 'https://screwfast.uk' + '/social.webp',
           },
         },
       ],
@@ -113,10 +113,10 @@ export default defineConfig({
       brotli: true,
     }),
   ],
-  output: "static",
+  output: 'static',
   experimental: {
     clientPrerender: true,
     directRenderScript: true,
   },
   adapter: vercelStatic(),
-});
+})

@@ -1,31 +1,30 @@
 ---
 // Import the necessary components
-import MainLayout from "@/layouts/MainLayout.astro";
-import ContactSection from "@/components/sections/ContactSection.astro";
-import { SITE } from "@/data_files/constants";
+import MainLayout from '@/layouts/MainLayout.astro'
+import ContactSection from '@/components/sections/ContactSection.astro'
+import { SITE } from '@/data_files/constants'
 
-const pageTitle: string = `Contact | ${SITE.title}`;
+const pageTitle: string = `Contact | ${SITE.title}`
 ---
 
 <!--Utilizing MainLayout for the outer layout of the page, and defining meta for SEO purposes-->
 <MainLayout
   title={pageTitle}
   structuredData={{
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": "https://ribhya.com/contact",
-    "url": "https://ribhya.com/contact",
-    "name": "Contact Us | Ribhya",
-    "description":
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': 'https://ribhya.com/contact',
+    url: 'https://ribhya.com/contact',
+    name: 'Contact Us | Ribhya',
+    description:
       "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.",
-    "isPartOf": {
-      "@type": "WebSite",
-      "url": "https://ribhya.com",
-      "name": "Ribhya",
-      "description":
-        "Ribhya: Unleashing AI for Optimal FinOps in Your Digital Realm.",
+    isPartOf: {
+      '@type': 'WebSite',
+      url: 'https://ribhya.com',
+      name: 'Ribhya',
+      description: 'Ribhya: Unleashing AI for Optimal FinOps in Your Digital Realm.',
     },
-    "inLanguage": "en-US"
+    inLanguage: 'en-US',
   }}
 >
   <ContactSection />

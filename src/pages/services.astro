@@ -1,36 +1,36 @@
 ---
 // Import necessary components
-import MainLayout from '@/layouts/MainLayout.astro';
-import MainSection from '@/components/ui/blocks/MainSection.astro';
-import LeftSection from '@/components/ui/blocks/LeftSection.astro';
-import RightSection from '@/components/ui/blocks/RightSection.astro';
-import FeaturesStats from '@/components/sections/features/FeaturesStats.astro';
+import MainLayout from '@/layouts/MainLayout.astro'
+import MainSection from '@/components/ui/blocks/MainSection.astro'
+import LeftSection from '@/components/ui/blocks/LeftSection.astro'
+import RightSection from '@/components/ui/blocks/RightSection.astro'
+import FeaturesStats from '@/components/sections/features/FeaturesStats.astro'
 
 // Import necessary images
-import blueprints from '@/images/blueprints-image.jpg';
-import ribhyaWorking from '@/images/ribhya-working.jpg';
-import beforeAfter from '@/images/before-after.jpg';
-import constructionWorkers from '@/images/construction-worker.jpg';
-import aerialView from '@/images/aerial-view.png';
-import usingTools from '@/images/using-tools.jpg';
-import progressBuilding from '@/images/progress-building.jpg';
-import underConstruction from '@/images/under-construction.jpg';
-import { SITE } from '@/data_files/constants';
+import blueprints from '@/images/blueprints-image.jpg'
+import ribhyaWorking from '@/images/ribhya-working.jpg'
+import beforeAfter from '@/images/before-after.jpg'
+import constructionWorkers from '@/images/construction-worker.jpg'
+import aerialView from '@/images/aerial-view.png'
+import usingTools from '@/images/using-tools.jpg'
+import progressBuilding from '@/images/progress-building.jpg'
+import underConstruction from '@/images/under-construction.jpg'
+import { SITE } from '@/data_files/constants'
 
 interface Article {
-  isRightSection: boolean;
-  title: string;
-  subTitle: string;
-  btnExists?: boolean;
-  btnTitle?: string;
-  btnURL?: string;
-  single?: boolean;
-  img?: any;
-  imgAlt?: string;
-  imgOne?: any;
-  imgOneAlt?: string;
-  imgTwo?: any;
-  imgTwoAlt?: string;
+  isRightSection: boolean
+  title: string
+  subTitle: string
+  btnExists?: boolean
+  btnTitle?: string
+  btnURL?: string
+  single?: boolean
+  img?: any
+  imgAlt?: string
+  imgOne?: any
+  imgOneAlt?: string
+  imgTwo?: any
+  imgTwoAlt?: string
 }
 
 const articles: Article[] = [
@@ -89,9 +89,9 @@ const articles: Article[] = [
     btnTitle: 'Read more',
     btnURL: '#',
   },
-];
+]
 
-const pageTitle: string = `Services | ${SITE.title}`;
+const pageTitle: string = `Services | ${SITE.title}`
 ---
 
 <MainLayout
@@ -112,15 +112,16 @@ const pageTitle: string = `Services | ${SITE.title}`;
         'Ribhya is a sophisticated C-Suite Copilot that enhances hybrid cloud cost management through advanced AI analytics.',
     },
     inLanguage: 'en-US',
-  }}>
+  }}
+>
   <!--MainSection is the introductory section of the page, it also contains a CTA button-->
   <MainSection
-    title='Master Your Digital Spend: Optimize, Innovate, and Thrive with Ribhya'
-    subTitle='Ribhya is a sophisticated C-Suite Copilot that enhances hybrid cloud cost management through advanced AI analytics. It offers key features like seamless integration and strategic cost reduction tools, helping c-suite enforce financial policies and make data-driven decisions.'
+    title="Master Your Digital Spend: Optimize, Innovate, and Thrive with Ribhya"
+    subTitle="Ribhya is a sophisticated C-Suite Copilot that enhances hybrid cloud cost management through advanced AI analytics. It offers key features like seamless integration and strategic cost reduction tools, helping c-suite enforce financial policies and make data-driven decisions."
     ,
     btnExists={true}
-    btnTitle='Schedule a Consultation'
-    btnURL='#'
+    btnTitle="Schedule a Consultation"
+    btnURL="#"
   />
   <!-- RightSection and LeftSection contain details about various services along with pertinent imagery.
   They alternate for variety in design.
@@ -155,15 +156,15 @@ const pageTitle: string = `Services | ${SITE.title}`;
           btnTitle={article.btnTitle}
           btnURL={article.btnURL}
         />
-      );
+      )
     })
   }
   <!--FeaturesStats section showcases essential stats valuable to users-->
   <FeaturesStats
-    title='By the Numbers'
-    subTitle='Our commitment to quality and reliability is evident in every project we undertake. At Ribhya, we are dedicated to delivering industry-leading services that ensure your construction projects are built to last.'
-    mainStatTitle='96%'
-    mainStatSubTitle='of our clients rate their experience with Ribhya as exceptional'
+    title="By the Numbers"
+    subTitle="Our commitment to quality and reliability is evident in every project we undertake. At Ribhya, we are dedicated to delivering industry-leading services that ensure your construction projects are built to last."
+    mainStatTitle="96%"
+    mainStatSubTitle="of our clients rate their experience with Ribhya as exceptional"
     stats={[
       {
         stat: '99.8%',
