@@ -5,10 +5,10 @@ author: 'Brad'
 authorImage: '@/images/blog/brad.avif'
 authorImageAlt: 'Avatar Description'
 pubDate: 2024-02-10
-cardImage: '@/images/blog/post-2.avif'
+cardImage: '@/images/blog/secops.webp'
 cardImageAlt: 'Man in black sweatpants using DEWALT circular saw and cutting a wood plank'
 readTime: 5
-tags: ['secops', 'operations', 'security']
+tags: ['secOps', 'operations', 'security', 'devSecOps', 'mlSecOps', 'finSecOps']
 contents:
   [
     "In today's hyper-connected world, cybersecurity has become a top priority for businesses of all sizes. With cyber threats growing in sophistication and frequency, organizations must adopt proactive measures to safeguard their digital assets and maintain trust with customers. Enter SecOps—a collaborative approach that combines security practices with operational processes to strengthen cybersecurity defenses and mitigate risks. In this blog post, we'll delve into the world of SecOps, exploring its significance, key principles, and how businesses can leverage it to enhance security in the digital age.",
