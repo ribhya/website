@@ -19,10 +19,10 @@ importers:
         version: 0.23.2(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5))
       '@astrojs/starlight-tailwind':
         specifier: ^2.0.3
-        version: 2.0.3(@astrojs/starlight@0.23.2(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5)))(@astrojs/tailwind@5.1.0(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5))(tailwindcss@3.4.3))(tailwindcss@3.4.3)
+        version: 2.0.3(@astrojs/starlight@0.23.2(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5)))(@astrojs/tailwind@5.1.0(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5))(tailwindcss@3.4.4))(tailwindcss@3.4.4)
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5))(tailwindcss@3.4.3)
+        version: 5.1.0(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5))(tailwindcss@3.4.4)
       '@astrojs/vercel':
         specifier: ^7.6.0
         version: 7.6.0(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5))
@@ -57,12 +57,12 @@ importers:
         specifier: ^0.1.5
         version: 0.1.5
       tailwindcss:
-        specifier: ^3.4.3
-        version: 3.4.3
+        specifier: ^3.4.4
+        version: 3.4.4
     devDependencies:
       '@tailwindcss/forms':
         specifier: ^0.5.7
-        version: 0.5.7(tailwindcss@3.4.3)
+        version: 0.5.7(tailwindcss@3.4.4)
       astro-vtbot:
         specifier: ^1.7.23
         version: 1.7.23
@@ -2663,8 +2663,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  tailwindcss@3.4.3:
-    resolution: {integrity: sha512-U7sxQk/n397Bmx4JHbJx/iSOOv5G+II3f1kpLpY2QeUv5DcPdcTsYLlusZfq1NthHS1c1cZoyFmmkex1rzke0A==}
+  tailwindcss@3.4.4:
+    resolution: {integrity: sha512-ZoyXOdJjISB7/BcLTR6SEsLgKtDStYyYZVLsUtWChO4Ps20CBad7lfJKVDiejocV4ME1hLmyY0WJE3hSDcmQ2A==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3139,11 +3139,11 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.23.8
 
-  '@astrojs/starlight-tailwind@2.0.3(@astrojs/starlight@0.23.2(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5)))(@astrojs/tailwind@5.1.0(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5))(tailwindcss@3.4.3))(tailwindcss@3.4.3)':
+  '@astrojs/starlight-tailwind@2.0.3(@astrojs/starlight@0.23.2(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5)))(@astrojs/tailwind@5.1.0(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5))(tailwindcss@3.4.4))(tailwindcss@3.4.4)':
     dependencies:
       '@astrojs/starlight': 0.23.2(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5))
-      '@astrojs/tailwind': 5.1.0(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5))(tailwindcss@3.4.3)
-      tailwindcss: 3.4.3
+      '@astrojs/tailwind': 5.1.0(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5))(tailwindcss@3.4.4)
+      tailwindcss: 3.4.4
 
   '@astrojs/starlight@0.23.2(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5))':
     dependencies:
@@ -3171,13 +3171,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/tailwind@5.1.0(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5))(tailwindcss@3.4.3)':
+  '@astrojs/tailwind@5.1.0(astro@4.9.2(@types/node@20.14.1)(typescript@5.4.5))(tailwindcss@3.4.4)':
     dependencies:
       astro: 4.9.2(@types/node@20.14.1)(typescript@5.4.5)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
-      tailwindcss: 3.4.3
+      tailwindcss: 3.4.4
     transitivePeerDependencies:
       - ts-node
 
@@ -3792,10 +3792,10 @@ snapshots:
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
-  '@tailwindcss/forms@0.5.7(tailwindcss@3.4.3)':
+  '@tailwindcss/forms@0.5.7(tailwindcss@3.4.4)':
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.4.3
+      tailwindcss: 3.4.4
 
   '@types/acorn@4.0.6':
     dependencies:
@@ -6134,7 +6134,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  tailwindcss@3.4.3:
+  tailwindcss@3.4.4:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
