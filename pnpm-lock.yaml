@@ -64,8 +64,8 @@ importers:
         specifier: ^0.5.7
         version: 0.5.7(tailwindcss@3.4.4)
       astro-vtbot:
-        specifier: ^1.7.24
-        version: 1.7.24
+        specifier: ^1.7.25
+        version: 1.7.25
       prettier:
         specifier: ^3.3.2
         version: 3.3.2
@@ -939,8 +939,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^3.3.0
 
-  astro-vtbot@1.7.24:
-    resolution: {integrity: sha512-MAyO7z/iwJpc3EcSy34aD7rEyerKrVfeUfE8Ebza+TOEKOlCt7WqWrWNNZgU9YYo+CshGCx8noZx/lItDQuVFQ==}
+  astro-vtbot@1.7.25:
+    resolution: {integrity: sha512-dgfBH5KidogzfZ6DFBdS5vsuXMhT/cKPAsIkDKff+yFBcchXH1oW5E67D4yrnF/Uiebb+tCqvnsN0CmpQTFK5w==}
 
   astro@4.11.0:
     resolution: {integrity: sha512-3VWxz/08sChQIX68tuE7Y769DUdjsT3Zq2/y4SkrDRlwN9IZ/aebwcRWr5a2yMSdO2vpFxtEdobq0mKnMlLErg==}
@@ -3831,7 +3831,7 @@ snapshots:
       astro: 4.11.0(@types/node@20.14.8)(typescript@5.5.2)
       rehype-expressive-code: 0.35.3
 
-  astro-vtbot@1.7.24: {}
+  astro-vtbot@1.7.25: {}
 
   astro@4.11.0(@types/node@20.14.8)(typescript@5.5.2):
     dependencies:
