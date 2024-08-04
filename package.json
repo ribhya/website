@@ -30,7 +30,7 @@
     "@fontsource/urbanist": "^5.0.20",
     "@lloydjatkinson/astro-snipcart": "^0.3.0",
     "@lloydjatkinson/astro-snipcart-design-system": "^0.3.0",
-    "@types/node": "^20.14.14",
+    "@types/node": "^22.1.0",
     "astro": "^4.13.1",
     "astro-compressor": "^0.4.1",
     "globby": "^14.0.2",
