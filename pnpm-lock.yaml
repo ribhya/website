@@ -29,6 +29,12 @@ importers:
       '@fontsource/urbanist':
         specifier: ^5.0.20
         version: 5.0.20
+      '@lloydjatkinson/astro-snipcart':
+        specifier: ^0.3.0
+        version: 0.3.0(astro@4.13.1(@types/node@20.14.14)(typescript@5.5.4))
+      '@lloydjatkinson/astro-snipcart-design-system':
+        specifier: ^0.3.0
+        version: 0.3.0(astro@4.13.1(@types/node@20.14.14)(typescript@5.5.4))
       '@types/node':
         specifier: ^20.14.14
         version: 20.14.14
@@ -565,6 +571,16 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
+
+  '@lloydjatkinson/astro-snipcart-design-system@0.3.0':
+    resolution: {integrity: sha512-ats0eGjxRpcqeIbCFRzkh+wNVFLuIDdDandOAB9wOFKy4bqBKGGqtbOVQFQFQFQGaR148Ay7z5Q0grXx6WWcVw==}
+    peerDependencies:
+      astro: ^4.3.5
+
+  '@lloydjatkinson/astro-snipcart@0.3.0':
+    resolution: {integrity: sha512-kKPDHWvrgCYh8imKsi+LX+w88FvRq7g6lG6hqzAkf4Dlzr0xwCaJJLHlVcCIQcoJTYPiRJpT3cne99iNjsya8w==}
+    peerDependencies:
+      astro: ^1.0.0-beta.0
 
   '@mapbox/node-pre-gyp@1.0.11':
     resolution: {integrity: sha512-Yhlar6v9WQgUp/He7BdgzOz8lqMQ8sU+jkCq7Wx8Myc5YFJLbEe7lgui/V7G1qB1DJykHSGwreceSaD60Y0PUQ==}
@@ -3330,6 +3346,15 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
+
+  '@lloydjatkinson/astro-snipcart-design-system@0.3.0(astro@4.13.1(@types/node@20.14.14)(typescript@5.5.4))':
+    dependencies:
+      '@lloydjatkinson/astro-snipcart': 0.3.0(astro@4.13.1(@types/node@20.14.14)(typescript@5.5.4))
+      astro: 4.13.1(@types/node@20.14.14)(typescript@5.5.4)
+
+  '@lloydjatkinson/astro-snipcart@0.3.0(astro@4.13.1(@types/node@20.14.14)(typescript@5.5.4))':
+    dependencies:
+      astro: 4.13.1(@types/node@20.14.14)(typescript@5.5.4)
 
   '@mapbox/node-pre-gyp@1.0.11':
     dependencies:

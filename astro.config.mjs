@@ -12,16 +12,16 @@ export default defineConfig({
   image: {
     domains: ['images.unsplash.com'],
   },
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
-    fallback: {
-      fr: 'en',
-    },
-    routing: {
-      prefixDefaultLocale: false,
-    },
-  },
+  // i18n: {
+  //   defaultLocale: 'en',
+  //   locales: ['en', 'fr'],
+  //   fallback: {
+  //     fr: 'en',
+  //   },
+  //   routing: {
+  //     prefixDefaultLocale: false,
+  //   },
+  // },
   prefetch: true,
   integrations: [
     tailwind(),
@@ -36,20 +36,20 @@ export default defineConfig({
     }),
     starlight({
       title: 'Docs',
-      // defaultLocale: 'root',
-      // locales: {
-      //   root: {
-      //     label: 'English',
-      //     lang: 'en',
-      //   },
-      //   de: { label: 'Deutsch', lang: 'de' },
-      //   es: { label: 'Español', lang: 'es' },
-      //   fa: { label: 'Persian', lang: 'fa', dir: 'rtl' },
-      //   fr: { label: 'Français', lang: 'fr' },
-      //   hi: { label: 'हिन्दी', land: 'hi' },
-      //   ja: { label: '日本語', lang: 'ja' },
-      //   'zh-cn': { label: '简体中文', lang: 'zh-CN' },
-      // },
+      defaultLocale: 'root',
+      locales: {
+        root: {
+          label: 'English',
+          lang: 'en',
+        },
+        de: { label: 'Deutsch', lang: 'de' },
+        es: { label: 'Español', lang: 'es' },
+        fa: { label: 'Persian', lang: 'fa', dir: 'rtl' },
+        fr: { label: 'Français', lang: 'fr' },
+        hi: { label: 'हिन्दी', land: 'hi' },
+        ja: { label: '日本語', lang: 'ja' },
+        'zh-cn': { label: '简体中文', lang: 'zh-CN' },
+      },
       // https://starlight.astro.build/guides/sidebar/
       sidebar: [
         {
